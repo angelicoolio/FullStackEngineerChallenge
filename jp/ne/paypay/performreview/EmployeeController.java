@@ -17,11 +17,21 @@ public class EmployeeController {
 	
 	PerformanceReviewService prService;
 	
+	/**
+	 * This is for employer to retrieve reviews needed to be reviewed
+	 * @param id - Reviewer's Employee ID
+	 * @return - List of reviews for the input reviewer
+	 */
 	@GetMapping("/review/{id}")
 	public List<Review> getReviews(@PathVariable Long id){
 		return new ArrayList<>(prService.getReviewsByReviewer(id));
 	}
 
+	/**
+	 * This is to submit the updated review by the reviewer
+	 * @param in - Updated review by the reviewer
+	 * @return
+	 */
 	@PutMapping("/review")
 	public Review submitFeedback(@RequestBody Review in) {
 		return prService.submitFeedback(in);

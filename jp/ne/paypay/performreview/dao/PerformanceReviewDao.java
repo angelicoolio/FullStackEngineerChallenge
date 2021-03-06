@@ -9,10 +9,11 @@ public interface PerformanceReviewDao {
 	Collection<Employee> getEmployee();
 	Employee insertOrUpdateEmployee(Employee employee);
 	void deleteEmployee(Long id);
-	Employee findEmployee(String firstName, String lastName);
+	Employee findEmployeeById(Long id);
+	Collection<Employee> findEmployee(String firstName, String lastName, String otherName);
 	
 	Collection<Review> getAllReview();
-	Collection<Review> getReviewByReviewee(Employee reviewee);
-	Collection<Review> getReviewByReviewer(Employee reviewer);
+	Collection<Review> getReviewByReviewee(Long revieweeId);
+	Collection<Review> getReviewByReviewer(Long reviewerId);
 	Review insertOrUpdateReview(Review review);
 }

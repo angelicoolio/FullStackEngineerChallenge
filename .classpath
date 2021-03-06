@@ -16,6 +16,11 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="thirdparty/javax.persistence-api-2.2.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="lib" path="thirdparty/hibernate-commons-annotations-5.1.2.Final.jar">
 		<attributes>
 			<attribute name="module" value="true"/>
@@ -26,7 +31,7 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="thirdparty/javax.persistence-api-2.2.jar">
+	<classpathentry kind="lib" path="thirdparty/spring-beans-5.2.9.RELEASE.jar">
 		<attributes>
 			<attribute name="module" value="true"/>
 		</attributes>
